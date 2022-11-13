@@ -1,0 +1,13 @@
+#main title{
+    display:inline;
+    margin-top: 0px;;
+    width:50%;
+}
+#img1{
+    float:left;
+    width:25%;
+}
+#img2{
+    float: right;
+    width:25%;
+}
