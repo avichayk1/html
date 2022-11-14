@@ -12,16 +12,80 @@
     </head> 
     <body>
         <section>
-            <header>
+            <header class="header">
                  <h1 id="main title">  JERUSALEM ZOO   </h1>
+                 <div class="navigation">
+                    <a class="link item1" href="#opening_hours">Opening Hours</a>
+                    <a class="link item2" href="#galery">Galery</a>
+                    <a class="link item3" href="#join_mailing">To Join Our Mailing List</a>
+                    <a class="link item4" href="#contact_us">Contact Us</a>
+                    <a class="link item5" href="#activities"> Activities & Feedings</a>
+                 </div>
                  <img id ="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFpozeZCGh_2akrTlnHbhTmwBQnKWyTxYLwQ&usqp=CAU" alt="picture of zoo" width="200" height="200">
                  <img id="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFpozeZCGh_2akrTlnHbhTmwBQnKWyTxYLwQ&usqp=CAU" alt="picture of zoo" width="200" height="200">
             </header>
         </section>
         <section>
-            <p>
+            <h3 id="activities">Activities & Feedings</h3>
+            <table>
+                <thead>
+                    <tr class="days">
+                        <th></th><th>Sunday</th><th>Monday</th><th>Tuesday</th><th>Wendnesday</th><th>Thursday</th><th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>10:00</th><td>monkeys - feeding</td><td>monkeys - feeding</td><td>monkeys - feeding</td><td>monkeys - feeding</td><td>monkeys - feeding</td><td>monkeys - feeding</td>
+                    </tr>
+                    <tr>
+                        <th>11:00</th><td>giraffs - feeding</td><td>kangaroo - activation</td><td>giraffs - feeding</td><td>kangaroo - activation</td><td>giraffs - feeding</td><td>kangaroo - activation</td>
+                    </tr>
+                    <tr>
+                        <th>12:00</th><td colspan="6" rowspan="2">elephants - feeding + activation</td>
+                    </tr>
+                    <tr>
+                        <th>13:00</th>
+                    </tr>
+                    <tr>
+                        <th>14:00</th><td>penguins - feeding</td><td></td><td>penguins - feeding</td><td></td><td>penguins - feeding</td><td></td>
+                    </tr>
+                    <tr>
+                        <th>15:00</th><td>lion - feeding</td><td>lion - feeding</td><td>lion - feeding</td><td>lion - feeding</td><td>lion - feeding</td><td>lion - feeding</td>
+                    </tr>
+                    <tr>
+                        <th>16:00</th><td colspan="6" rowspan="2">elephants - feeding</td>
+                    </tr>
+                </tbody>
+            </table>  
+        </section>
+        <section>
+            <div id="galery" class="galery_container">
                 
-            </p>   
+            </div>
+        </section>
+        <section>
+            <h3 id="join_mailing">To Join Our Mailing List</h3>
+            <form action="">
+                <div>
+                    <label for="fname">Enter your first name:</label>
+                    <input type="fname" id="fname" placeholder="First Name">
+                </div>
+                <br>
+                <div>
+                    <label for="lname">Enter your last name:</label>
+                    <input type="lname" id="lname" placeholder="Last Name">
+                </div>
+                <br>
+                <div>
+                    <label for="email">Enter your email address:</label>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <br>
+                <div>
+                    <input type="reset">
+                    <input type="submit">
+                </div>
+            </form>
         </section>
     </body>
     <footer>
