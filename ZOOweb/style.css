@@ -1,11 +1,14 @@
 html{
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 h1{
     font-size: 60px;
 }
+/*
 #main title{
     margin-top: -50px;
     width:100%;
@@ -24,7 +27,7 @@ h1{
     height: 150px;
  
 }
-
+*/
 
 
 
@@ -36,7 +39,7 @@ h1{
     float: right;
     width:25%;
 }
-
+/*
 nav{
 
     display: flex;
@@ -58,6 +61,7 @@ nav{
     font-size: 25px;
     
 }
+*/
 table{
     border-collapse: collapse;
     border: 3px solid black;
@@ -70,8 +74,22 @@ table{
 .galery_container{
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-auto-rows: 75px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 300px;
+    grid-auto-flow: dense;
+}
+
+.midume-l{
+    grid-row: span 2;
+}
+
+.midume-r{
+    grid-column: span 2;
+}
+
+.big{
+    grid-row: span 2;
+    grid-column: span 2;
 }
 
 tr, td, th{
@@ -90,4 +108,70 @@ footer{
 }
 #join_mailing{
   
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 160px;
+
+}
+.nav-links{
+    padding: 28px 0;
+    font-size: 22px;
+}
+.nav-links li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: rgb(30, 57, 127);
+    padding: 5px 0;
+    position: relative;
+}
+.nav-links li a::after{
+    content: '';
+    background: yellowgreen;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.title{
+    position: absolute;
+    right: 35%;
+    top: 25%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.title h1{
+    font-size: 65px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.ee{
+    margin-top: 20px;
+    display: flex;
+}
+header{
+    background-image: url("https://www.traffic.org/site/assets/files/1378/us-ivory-report-1800_mini.-1800w.1530280147.jpg");
+    height: 600px;
+}
+
+.button{
+    width: 50px;
+    border: 3px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+    min-height:30px; 
+    min-width: 120px;
+    margin-top: 5 px;
+    margin-left: 10px;
 }
