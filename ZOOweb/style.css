@@ -46,6 +46,20 @@ table{
     grid-auto-flow: dense;
 
 }
+.inner-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-auto-rows: auto; */
+    grid-gap: 10px;
+    justify-items:end;
+
+}
+.opening_hours{
+    grid-column: 1;
+}
+.videozoo{
+    grid-column: 3;
+}
 @keyframes slider {
     from {
         background-position: 0% 0%; 
@@ -235,6 +249,16 @@ form button{
         justify-content: space-around;
         flex-wrap: wrap;
         margin: 5px;
+     }
+     .inner-grid{
+        display: grid;
+        grid-template-columns: 1fr ;
+     }
+     .opening_hours{
+        grid-column:1/3;
+     }
+     .videozoo{
+        grid-column:1/3;
      }
 } 
 
